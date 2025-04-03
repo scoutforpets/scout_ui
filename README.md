@@ -14,7 +14,10 @@ This project defines the UI style for the Scout brand. Here, you will find the T
 Install via `flutter pub add`:
 
 ```sh
-dart pub add scout_ui
+  scout_ui:
+    git:
+      url: git@github.com:scoutforpets/scout_ui.git
+      ref: v0.0.1 // refer to the correct tag or branch
 ```
 
 ---
