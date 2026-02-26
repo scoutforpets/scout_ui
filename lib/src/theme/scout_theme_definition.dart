@@ -214,7 +214,7 @@ final datePickerTheme = DatePickerThemeData(
 );
 
 /// Modal theme.
-final modalTheme = DialogTheme(
+final modalTheme = DialogThemeData(
   shape: RoundedRectangleBorder(
     borderRadius: BorderRadius.circular(16),
   ),

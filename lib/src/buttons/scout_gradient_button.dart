@@ -54,7 +54,7 @@ class ScoutGradientButton extends StatelessWidget {
               )
             : Text(
                 text,
-                style: theme.textLexend.bodyStrong!.copyWith(
+                style: theme.scoutTextTheme.bodyStrong!.copyWith(
                   fontWeight: FontWeight.w600,
                   color: Colors.white,
                 ),

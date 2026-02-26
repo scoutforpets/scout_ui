@@ -5,10 +5,22 @@ import 'package:scout_ui/src/theme/extensions/scout_text_theme.dart';
 import 'package:scout_ui/src/theme/scout_theme_definition.dart';
 
 /// Class to define the Scout theme.
-class ScoutTheme {
+class KenWalksDogsTheme {
   /// Light Scout Theme.
   static final light = ThemeData(
-    colorScheme: lightColorScheme,
+    canvasColor: const Color(0xFFE6C413),
+    colorScheme: lightColorScheme.copyWith(
+      brightness: Brightness.light,
+      primary: const Color(0xFF102F43),
+      onPrimary: const Color(0xFFF8FBFB),
+      secondary: const Color(0xFFE6C413),
+      onSecondary: const Color(0xFF102F43),
+      tertiary: const Color(0xFF8EB1BB),
+      onTertiary: const Color(0xFF102F43),
+      error: const Color(0xFFB00020),
+      onError: const Color(0xFFFFFFFF),
+      onSurface: const Color(0xFF102F43),
+    ),
     appBarTheme: appBarTheme,
     elevatedButtonTheme: lightElevatedButtonTheme,
     textButtonTheme: textButtonTheme,
@@ -18,92 +30,131 @@ class ScoutTheme {
     datePickerTheme: datePickerTheme,
     extensions: [
       const ScoutColors(
-        scoutGreen: scoutGreen,
-        brandBlue: brandBlue,
-        loginScreenBackgroundColor: loginScreenBackgroundColor,
+        scoutGreen: Color(0xFF102f43),
+        brandBlue: Color(0xFFe6c413),
+        loginScreenBackgroundColor: Color(0xFFe6c413),
         danger: Color(0xFFFE5F55),
       ),
       const ScoutGradients(
         linearGradient: LinearGradient(
-          colors: <Color>[brandBlue, scoutGreen],
+          colors: [
+            Color(0xFF456a76),
+            Color(0xFF8eb1bb),
+          ],
         ),
         topLeftBottomRight: LinearGradient(
-          colors: <Color>[brandBlue, scoutGreen],
+          colors: [
+            Color(0xFF456a76),
+            Color(0xFF8eb1bb),
+          ],
           begin: Alignment.topLeft,
           end: Alignment.bottomRight,
         ),
         topCenterBottomCenter: LinearGradient(
           transform: GradientRotation(6.05),
-          stops: <double>[0.1, 0.9],
-          colors: <Color>[brandBlue, scoutGreen],
+          stops: [0.1, 0.9],
+          colors: [
+            Color(0xFF456a76),
+            Color(0xFF8eb1bb),
+          ],
           begin: Alignment.topCenter,
           end: Alignment.bottomCenter,
         ),
       ),
+      // Fill all text slots for Poppins so widgets can use
+      // scoutTextTheme everywhere.
       ScoutTextTheme(
+        // Legacy names
         headlineXl: const TextStyle(
-          fontFamily: 'Lexend Deca',
+          fontFamily: 'Poppins',
           fontSize: 48,
           fontWeight: FontWeight.w600,
         ),
         headlineL: const TextStyle(
-          fontFamily: 'Lexend Deca',
+          fontFamily: 'Poppins',
           fontSize: 40,
           fontWeight: FontWeight.w600,
         ),
         headlineM: const TextStyle(
-          fontFamily: 'Lexend Deca',
+          fontFamily: 'Poppins',
           fontSize: 32,
           fontWeight: FontWeight.w600,
         ),
         headlineS: const TextStyle(
-          fontFamily: 'Lexend Deca',
+          fontFamily: 'Poppins',
           fontSize: 24,
           fontWeight: FontWeight.w600,
         ),
         bodyStrong: const TextStyle(
-          fontFamily: 'Lexend Deca',
+          fontFamily: 'Poppins',
           fontSize: 16,
           fontWeight: FontWeight.w600,
         ),
         bodyDefault: const TextStyle(
-          fontFamily: 'Lexend Deca',
+          fontFamily: 'Poppins',
           fontSize: 16,
           fontWeight: FontWeight.w400,
         ),
         link: const TextStyle(
-          fontFamily: 'Lexend Deca',
+          fontFamily: 'Poppins',
           fontSize: 16,
           fontWeight: FontWeight.w400,
         ),
         button: const TextStyle(
-          fontFamily: 'Lexend Deca',
+          fontFamily: 'Poppins',
           fontSize: 16,
           fontWeight: FontWeight.w400,
         ),
         label: const TextStyle(
-          fontFamily: 'Lexend Deca',
+          fontFamily: 'Poppins',
           fontSize: 14,
           fontWeight: FontWeight.w400,
         ),
         caption: const TextStyle(
-          fontFamily: 'Lexend Deca',
+          fontFamily: 'Poppins',
           fontSize: 12,
           fontWeight: FontWeight.w400,
         ),
-        displayLarge: textTheme.displayLarge,
-        displayMedium: textTheme.displayMedium,
-        displaySmall: textTheme.displaySmall,
-        headlineLarge: textTheme.headlineLarge,
-        headlineMedium: textTheme.headlineMedium,
-        headlineSmall: textTheme.headlineSmall,
-        titleLarge: textTheme.titleLarge,
-        titleMedium: textTheme.titleMedium,
-        titleSmall: textTheme.titleSmall,
-        labelLarge: textTheme.labelLarge,
-        labelMedium: textTheme.labelMedium,
-        labelSmall: textTheme.labelSmall,
-        bodyLarge: textTheme.bodyLarge,
+        // Material slots
+        displayLarge: textTheme.displayLarge!.copyWith(
+          fontFamily: 'Poppins',
+        ),
+        displayMedium: textTheme.displayMedium!.copyWith(
+          fontFamily: 'Poppins',
+        ),
+        displaySmall: textTheme.displaySmall!.copyWith(
+          fontFamily: 'Poppins',
+        ),
+        headlineLarge: textTheme.headlineLarge!.copyWith(
+          fontFamily: 'Poppins',
+        ),
+        headlineMedium: textTheme.headlineMedium!.copyWith(
+          fontFamily: 'Poppins',
+        ),
+        headlineSmall: textTheme.headlineSmall!.copyWith(
+          fontFamily: 'Poppins',
+        ),
+        titleLarge: textTheme.titleLarge!.copyWith(
+          fontFamily: 'Poppins',
+        ),
+        titleMedium: textTheme.titleMedium!.copyWith(
+          fontFamily: 'Poppins',
+        ),
+        titleSmall: textTheme.titleSmall!.copyWith(
+          fontFamily: 'Poppins',
+        ),
+        labelLarge: textTheme.labelLarge!.copyWith(
+          fontFamily: 'Poppins',
+        ),
+        labelMedium: textTheme.labelMedium!.copyWith(
+          fontFamily: 'Poppins',
+        ),
+        labelSmall: textTheme.labelSmall!.copyWith(
+          fontFamily: 'Poppins',
+        ),
+        bodyLarge: textTheme.bodyLarge!.copyWith(
+          fontFamily: 'Poppins',
+        ),
       ),
     ],
   );
