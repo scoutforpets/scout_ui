@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:scout_ui/src/theme/scout_theme.dart';
+import 'package:scout_ui/scout_ui.dart';
 
 /// {@template scout_button}
 /// Define custom button with background color.
@@ -36,7 +36,7 @@ class ScoutButton extends StatelessWidget {
       ),
       child: Text(
         text,
-        style: theme.textLexend.bodyStrong!.copyWith(
+        style: theme.scoutTextTheme.bodyStrong!.copyWith(
           color: Colors.black,
         ),
       ),

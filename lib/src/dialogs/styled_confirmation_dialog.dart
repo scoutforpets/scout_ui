@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:scout_ui/src/theme/scout_theme.dart';
+import 'package:scout_ui/scout_ui.dart';
 
 /// {@template styled_confirmation_dialog}
 /// Define custom dialog.
@@ -43,7 +43,7 @@ class StyledConfirmationDialog extends StatelessWidget {
       titlePadding: const EdgeInsets.all(16),
       title: Text(
         title,
-        style: theme.textLexend.headlineS,
+        style: theme.scoutTextTheme.headlineS,
         textAlign: TextAlign.left,
       ),
       content: content,
