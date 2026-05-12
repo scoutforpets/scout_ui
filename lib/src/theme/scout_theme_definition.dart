@@ -3,56 +3,64 @@ import 'package:flutter/material.dart';
 /// Text theme.
 const textTheme = TextTheme(
   displayLarge: TextStyle(
-    fontFamily: 'Proxima Nova Light',
+    fontFamily: 'Mulish',
     fontSize: 44,
-    fontWeight: FontWeight.w100,
+    fontWeight: FontWeight.w300,
   ),
   displayMedium: TextStyle(
-    fontFamily: 'Proxima Nova Light',
+    fontFamily: 'Mulish',
     fontSize: 32,
-    fontWeight: FontWeight.w100,
+    fontWeight: FontWeight.w300,
   ),
   displaySmall: TextStyle(
-    fontFamily: 'Proxima Nova Light',
+    fontFamily: 'Mulish',
     fontSize: 21,
-    fontWeight: FontWeight.w100,
+    fontWeight: FontWeight.w300,
   ),
   headlineLarge: TextStyle(
-    fontFamily: 'Proxima Nova Semibold',
+    fontFamily: 'Mulish',
     fontSize: 32,
+    fontWeight: FontWeight.w600,
   ),
   headlineMedium: TextStyle(
-    fontFamily: 'Proxima Nova Semibold',
+    fontFamily: 'Mulish',
     fontSize: 28,
+    fontWeight: FontWeight.w600,
   ),
   headlineSmall: TextStyle(
-    fontFamily: 'Proxima Nova Semibold',
+    fontFamily: 'Mulish',
     fontSize: 18,
     fontWeight: FontWeight.w600,
   ),
   titleLarge: TextStyle(
-    fontFamily: 'Proxima Nova Bold',
+    fontFamily: 'Mulish',
     fontSize: 32,
+    fontWeight: FontWeight.w700,
   ),
   titleMedium: TextStyle(
-    fontFamily: 'Proxima Nova Bold',
+    fontFamily: 'Mulish',
     fontSize: 28,
+    fontWeight: FontWeight.w700,
   ),
   titleSmall: TextStyle(
-    fontFamily: 'Proxima Nova Bold',
+    fontFamily: 'Mulish',
     fontSize: 18,
+    fontWeight: FontWeight.w700,
   ),
   labelLarge: TextStyle(
-    fontFamily: 'Proxima Nova Regular',
+    fontFamily: 'Mulish',
     fontSize: 24,
+    fontWeight: FontWeight.w400,
   ),
   labelMedium: TextStyle(
-    fontFamily: 'Proxima Nova Regular',
+    fontFamily: 'Mulish',
     fontSize: 20,
+    fontWeight: FontWeight.w400,
   ),
   labelSmall: TextStyle(
-    fontFamily: 'Proxima Nova Regular',
+    fontFamily: 'Mulish',
     fontSize: 16,
+    fontWeight: FontWeight.w400,
   ),
   bodyLarge: TextStyle(
     fontFamily: 'Poppins',
@@ -145,7 +153,8 @@ final lightElevatedButtonTheme = ElevatedButtonThemeData(
     ),
     textStyle: const TextStyle(
       fontSize: 18,
-      fontFamily: 'Proxima Nova Semibold',
+      fontFamily: 'Mulish',
+      fontWeight: FontWeight.w600,
     ),
     elevation: 1,
     backgroundColor: lightColorScheme.primary,
@@ -239,7 +248,8 @@ final textButtonTheme = TextButtonThemeData(
     ),
     textStyle: const TextStyle(
       fontSize: 18,
-      fontFamily: 'Proxima Nova Semibold',
+      fontFamily: 'Mulish',
+      fontWeight: FontWeight.w600,
     ),
   ),
 );
